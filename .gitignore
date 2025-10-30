@@ -44,6 +44,9 @@ Thumbs.db
 coverage/
 .nyc_output/
 
+#Husky
+.husky/
+
 # Lock files (optional in monorepo)
 # Uncomment if you only use root lockfile
 # apps/*/pnpm-lock.yaml
