@@ -2,11 +2,13 @@
   "name": "sahaay",
   "version": "1.0.0",
   "scripts": {
-    "test": "",
-    "prepare": "husky install"
+    "dev:api": "nodemon apps/api/src/main.js",
+    "start": "nodemon apps/api/src/main.js"
   },
   "lint-staged": {
-    "*.{js,ts,jsx,tsx}": "eslint --fix"
+    "**/*.{js,mjs,cjs}": [
+      "eslint --fix"
+    ]
   },
   "engines": {
     "node": ">=22"
@@ -17,14 +19,6 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@commitlint/cli": "^20.1.0",
-    "@commitlint/config-conventional": "^20.0.0",
-    "eslint": "^9.38.0",
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-prettier": "^5.5.4",
-    "husky": "^8.0.0",
-    "lint-staged": "^16.2.6",
-    "prettier": "^3.6.2",
-    "turbo": "^2.5.8"
+    "turbo": "^2.6.1"
   }
 }
